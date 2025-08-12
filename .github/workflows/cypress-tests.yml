@@ -1,4 +1,4 @@
-name: Cypress Tests on Deploy
+name: Cypress Tests run on Deploy from Main, on dev enviornment
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Copy dev env file
-        run: cp .env.dev .env   # Cypress + dotenv will read from .env
+        run: cp .env.dev .env  
 
       - name: Run Cypress tests (headless)
         uses: cypress-io/github-action@v6
