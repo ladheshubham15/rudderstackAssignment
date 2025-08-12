@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "cypress": "^14.5.4",
+    "cypress-dotenv": "^3.0.1",
+    "cypress-iframe": "^1.0.1",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "dotenv": "^17.2.1",
+    "esbuild": "^0.25.8"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npm run cypress:run",
+    "cypress:open:dev": "npx cypress open --env configFile=dev",
+    "cypress:open:qa": "npx cypress open --env configFile=qa",
+    "cypress:open:prod": "npx cypress open --env configFile=prod",
+    "cypress:run:dev" : "npx cypress run --env configFile=dev",
+    "cypress:run:qa" : "npx cypress run --env configFile=qa",
+    "cypress:run:prod" : "npx cypress run --env configFile=prod"
+  }
+}
