@@ -84,8 +84,6 @@ Each `.env` file should contain:
 ```
 RUDDER_EMAIL=<your-email>
 RUDDER_PASSWORD=<your-password>
-DATA_PLANE_URL=<your-data-plane-url>
-WRITE_KEY=<your-write-key>
 BASEURL=<your-app-base-url>
 ```
 
