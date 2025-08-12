@@ -191,3 +191,4 @@ jobs:
 - Fixtures allow storing reusable payloads like `sampleEvent.json` for API requests.
 - Locators are stored separately for maintainability.
 - The framework supports multiple environments without code changes.
+- For Assignment Purpose Github actions are only executing for dev env.
