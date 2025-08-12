@@ -33,6 +33,7 @@ When('I POST a sample event to the data plane using the write key', () => {
 
 
 Then('the {string} destination should show at least 1 delivered event', (destination) => {
+  cy.log('Waiting for Events data sync to event metrix dashboard')
   cy.wait(waitTimeOutForEventDataSync) //wait for data sync on events dashboard
   uiHelper.verifyIfEventsAreAvailableAtDestination(destination)
 })
